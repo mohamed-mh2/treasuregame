@@ -51,19 +51,19 @@ let space = array.length -1;
 let kenzposi = array.indexOf("kanz");
 
 
-let win = "oh no you won ";
+let win = "Congrats you won 🎉";
 
 let step = 0;
 let l = posi +1;
 let q = khotwat-1;   
 if(gameover){
-    console.log("no need to countinue you won");
+    console.log("no need to countinue you won🏆");
     return;
 }
 
 if (lost) {
     
-    console.log("game over you are out of steps");
+    console.log("game over you are out of steps🛑");
     return;
 }
 
@@ -89,13 +89,13 @@ if(click === "right" ){
         return array;
     }else if(posi>=space){
 
-        console.log("cant go outside the map");
+        console.log("cant go outside the map⛔");
 
     }
     else if (l != kenzposi && q ===0) {
         khotwat = khotwat -1;
         lost = true;
-        console.log("sorry you lost");
+        console.log("sorry you lost😢");
     }
 
     
@@ -117,12 +117,12 @@ if(click === "right" ){
         khotwat = khotwat -1;
         return array;
     }else if(posi === 0){
-        console.log("cant go outside the map");
+        console.log("cant go outside the map⛔");
         
     }
     else if (posi-1 === kenzposi && khotwat-1 ===0) {
         lost = true;
-        console.log("sorry you lost");
+        console.log("sorry you lost😢");
         
     }
   
@@ -161,7 +161,8 @@ console.log(khotwat);
 
 
 
-// posi+1 === kenzposi && khotwat -1 ===0
+
+
 
 
 
