@@ -136,7 +136,7 @@ let array = [];
 
 map(6);
 
-startposition(3);
+startposition(1);
 
 hiddentru();
 
@@ -152,6 +152,7 @@ console.log(khotwat);
 moves("right");
 moves("right");
 console.log(khotwat);
+
 
 
 
