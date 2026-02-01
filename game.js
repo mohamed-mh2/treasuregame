@@ -50,7 +50,7 @@ let space = array.length -1;
 
 let kenzposi = array.indexOf("kanz");
 
-// let lost = "yessss you lost lol!";
+
 let win = "oh no you won ";
 
 let step = 0;
@@ -62,7 +62,7 @@ if(gameover){
 }
 
 if (lost) {
-    // gameover = true;
+    
     console.log("game over you are out of steps");
     return;
 }
@@ -125,10 +125,7 @@ if(click === "right" ){
         console.log("sorry you lost");
         
     }
-    // else{
-    //     console.log("steps are finshed");
-        
-    // }
+  
 }}
 
 }
@@ -139,16 +136,16 @@ let array = [];
 
 map(6);
 
-startposition(0);
+startposition(3);
 
 hiddentru();
 
-steps(3);
+steps(5);
 console.log(khotwat);
 console.log(array);
 moves("right");
 console.log(khotwat);
-moves("right");
+moves("left");
 console.log(khotwat);
 moves("right");
 console.log(khotwat);
@@ -165,6 +162,7 @@ console.log(khotwat);
 
 
 // posi+1 === kenzposi && khotwat -1 ===0
+
 
 
 
