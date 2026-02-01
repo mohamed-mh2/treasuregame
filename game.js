@@ -7,7 +7,6 @@ function map(tall){
 }
 
 
-
 function startposition(num){
     if (num < array.length && num >= 0){
     array.splice(num,1,"ME");
@@ -29,18 +28,17 @@ function hiddentru(){
     return array;
 }
 
-let khotwat = 0;
 
+let khotwat = 0;
 function steps(z){
     khotwat = z;
     return khotwat;
 }
 
 
-
-
 let gameover = false;
 let lost = false;
+
 
 function moves (click){
 
@@ -50,19 +48,20 @@ let space = array.length -1;
 
 let kenzposi = array.indexOf("kanz");
 
-
 let win = "Congrats you won 🎉";
 
 let step = 0;
+    
 let l = posi +1;
-let q = khotwat-1;   
+let q = khotwat-1; 
+    
 if(gameover){
     console.log("no need to countinue you won🏆");
     return;
 }
 
-if (lost) {
     
+if (lost) {
     console.log("game over you are out of steps🛑");
     return;
 }
@@ -97,8 +96,8 @@ if(click === "right" ){
         lost = true;
         console.log("sorry you lost😢");
     }
-
     
+
 }else if(click === "left" && khotwat>0){
     if (posi-1 === kenzposi){
         step = posi - 1;
@@ -152,6 +151,7 @@ console.log(khotwat);
 moves("right");
 moves("right");
 console.log(khotwat);
+
 
 
 
